@@ -26,7 +26,7 @@
     "list"
   ],
   "author": "Ossian Eriksson",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/OssianEriksson/encoding-finder/issues"
   },
