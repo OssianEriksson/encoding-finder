@@ -53,6 +53,10 @@ Build the app with
 npm run build
 ```
 
+### Deploy
+
+After building the app, `dist` directory containing the built project can be hosted by static web server.
+
 ## Aknowledgements
 
 - [iconv-lite](https://github.com/ashtuchkin/iconv-lite)
