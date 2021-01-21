@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Encoding Finder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="main.js"></script>
+    <div class="wrapper">
+      <div class="content">
+        <h1>Encoding Finder</h1>
+        <p>
+          This is a tool for finding text encodings build with
+          <a href="https://github.com/ashtuchkin/iconv-lite">iconv-lite</a>,
+          which is what determines what
+          <a
+            href="https://github.com/ashtuchkin/iconv-lite/wiki/Supported-Encodings"
+            >encodings are supported</a
+          >
+        </p>
+        <h2>Wrong Text Encoding?</h2>
+        <p>
+          Do you see <code>Ã¶</code> in your text where you think there should
+          be an <code>ö</code>? Enter <code>Ã¶</code> into the left column of
+          text fields and <code>ö</code> on the right of the same row and try a
+          search! You can add multiple pairs of acutal and expeted
+          strings/characters to narrow down the search.
+        </p>
+        <h2>What Encoding Displays These Bytes as These Chars?</h2>
+        <p>
+          hex is a supported charset, so you can for example type in
+          <code>8a</code> as the currently rendered text and <code>ä</code> as
+          the char you expect. The search will then tell you which text
+          encodings display the byte <code>8a</code> as <code>ä</code>
+        </p>
+        <div class="spacer"></div>
+        <div class="div-table search-table" id="text-to-text-table">
+          <div class="row row-header">
+            <div>What char sequence is rendered</div><div>What it should render as</div>
+          </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="div-table result-table" id="text-to-text-results">
+          <div class="row row-header">
+            <div>What charset was used</div><div>Correct charset</div>
+          </div>
+        </div>
+				<div class="spacer"></div>
+				<div class="footer">
+					<p>Source code on <a href="https://github.com/OssianEriksson">Github</a></p>
+				</div>
+      </div>
+    </div>
+  </body>
+</html>
