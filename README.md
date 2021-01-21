@@ -46,14 +46,14 @@ git clone https://github.com/OssianEriksson/encoding-finder.git
 npm install
 ```
 
-### Build
+### Building
 
 Build the app with
 ```shell
 npm run build
 ```
 
-### Deploy
+### Deploying
 
 After building the app, `dist` directory containing the built project can be hosted by static web server.
 
